@@ -1,5 +1,4 @@
 # Uçuş Rezervasyon Sistemi
-Proje Hakkında
 Bu proje, kullanıcıların uçuş araması yapmalarını, filtrelemelerini ve rezervasyon yapmalarını sağlayan bir uçuş rezervasyon sistemi uygulamasıdır. 
 Kullanıcılar, belirli kriterlere göre uçuşları arayabilir, uçuş detaylarını görebilir ve rezervasyon işlemlerini gerçekleştirebilir.
 

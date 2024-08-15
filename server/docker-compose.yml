@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "5001:5001"
+    environment:
+      - JWT_SECRET=5642157684351321
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "5002:5002"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/userdb
+      - JWT_SECRET=5642157684351321
+
+  flight-service:
+    build: ./flight-service
+    ports:
+      - "5003:5003"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/flightdb
+      - JWT_SECRET=5642157684351321
+      - FLIGHT_API_URL=https://api.schiphol.nl/public-flights
+      - FLIGHT_APP_ID=4335d034
+      - FLIGHT_APP_KEY=9930bfcc65628f5f599558bd0bf48bfa
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - auth-service
+      - user-service
+      - flight-service
+
+volumes:
+  mongo-data:

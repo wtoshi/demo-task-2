@@ -1,0 +1,64 @@
+# Node.js - Hem server hem de web için geçerli
+server/node_modules/
+web/node_modules/
+
+# Microservices - Her bir servis için geçerli
+server/auth-service/node_modules/
+server/flight-service/node_modules/
+server/user-service/node_modules/
+
+server/auth-service/logs/
+server/flight-service/logs/
+server/user-service/logs/
+
+server/auth-service/npm-debug.log*
+server/flight-service/npm-debug.log*
+server/user-service/npm-debug.log*
+
+server/auth-service/yarn-debug.log*
+server/flight-service/yarn-debug.log*
+server/user-service/yarn-debug.log*
+
+server/auth-service/.env
+server/flight-service/.env
+server/user-service/.env
+
+server/auth-service/dist/
+server/flight-service/dist/
+server/user-service/dist/
+
+server/auth-service/build/
+server/flight-service/build/
+server/user-service/build/
+
+server/auth-service/.DS_Store
+server/flight-service/.DS_Store
+server/user-service/.DS_Store
+
+# Log dosyaları - Hem server hem de web için geçerli
+server/logs/
+web/logs/
+*.log
+server/npm-debug.log*
+web/npm-debug.log*
+server/yarn-debug.log*
+web/yarn-debug.log*
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+server/.env
+web/.env
+
+# Build outputs - Eğer build dizinleri varsa
+server/dist/
+server/build/
+web/dist/
+web/build/
+
+# misc
+web/.DS_Store
+server/.DS_Store
+

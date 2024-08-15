@@ -1,0 +1,35 @@
+# Node.js ile ilgili klasörler
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Local development config dosyaları
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Nest.js build çıktıları
+dist
+.cache
+
+# Docker ilgili dosyalar
+Dockerfile
+docker-compose.yml
+
+# Git ile ilgili dosyalar
+.git
+.gitignore
+
+# Test ile ilgili klasör ve dosyalar
+test
+coverage
+
+# IDE ve editor ile ilgili dosyalar
+.vscode/
+.idea/
+.DS_Store
+
+# Log dosyaları
+*.log

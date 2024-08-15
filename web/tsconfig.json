@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                                  // Hangi ECMAScript sürümüne derleneceğini belirler.
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],         // Projede kullanılacak kütüphaneler.
+    "allowJs": true,                                  // JavaScript dosyalarının projede kullanılmasına izin verir.
+    "skipLibCheck": true,                             // Harici kütüphanelerdeki tür hatalarını kontrol etmez.
+    "esModuleInterop": true,                          // ES module ve CommonJS module uyumluluğu.
+    "allowSyntheticDefaultImports": true,             // Varsayılan dışa aktarımlar için synthetics destekler.
+    "strict": true,                                   // Katı tür denetimlerini etkinleştirir.
+    "forceConsistentCasingInFileNames": true,         // Dosya adları arasındaki büyük/küçük harf uyumsuzluklarını önler.
+    "module": "ESNext",                               // Modül sistemini ESNext olarak ayarlar.
+    "moduleResolution": "Node",                       // Node modül çözümleme stratejisini kullanır.
+    "resolveJsonModule": true,                        // JSON dosyalarını modül olarak içeri aktarmayı etkinleştirir.
+    "isolatedModules": true,                          // Her dosyanın kendi kapsamında işlenmesini sağlar.
+    "noEmit": true,                                   // Derleme sırasında hiçbir dosyanın çıkışını almaz.
+    "jsx": "react-jsx",                               // JSX dönüştürmesi için React JSX kullanır.
+    "baseUrl": ".",                               // Proje için kök dizini belirtir.
+    "paths": {                                        // Projede özel modül yollarını tanımlar.
+      "@components/*": ["components/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["src"],                                 // Hangi dosyaların derleneceğini belirtir.
+  "exclude": ["node_modules", "build"]                // Hangi dosya/dizinlerin derlenmeyeceğini belirtir.
+}

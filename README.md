@@ -53,8 +53,8 @@ Bu proje, Docker ile konteynerleştirilmiştir, bu yüzden Docker kullanarak kol
 
 1-Proje Depozunu Klonlayın:
 
-git clone https://github.com/kullaniciadi/proje-adi.git
-cd proje-adi
+git clone https://github.com/wtoshi/demo-task-2.git
+cd server ve cd web yaparak aşağıdaki komutları tekrarlayın.
 
 2-Docker Compose ile Servisleri Başlatın:
 Docker Compose, uygulamanın tüm servislerini tek bir komutla başlatmanızı sağlar.
@@ -71,8 +71,8 @@ Docker kullanmak istemiyorsanız, Node.js ile manuel olarak da çalıştırabili
 
 1-Proje Depozunu Klonlayın:
 
-git clone https://github.com/kullaniciadi/proje-adi.git
-cd proje-adi
+git clone https://github.com/wtoshi/demo-task-2.git
+cd server
 
 2-Bağımlılıkları Yükleyin:
 Her servis için bağımlılıkları yükleyin.
@@ -85,6 +85,11 @@ cd ../web && npm install
 3-Servisleri Başlatın:
 Her bir servisi ayrı ayrı başlatın.
 
+npm start
+
+web için de;
+cd web 
+npm install
 npm start
 
 4-Uygulamaya Erişin:

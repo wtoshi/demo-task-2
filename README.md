@@ -53,7 +53,7 @@ Docker Compose, uygulamanın tüm servislerini tek bir komutla başlatmanızı s
 docker-compose up -d
 
 3-Uygulamaya Erişin:
-Web:    Uygulama varsayılan olarak http://localhost:3000 adresinde çalışacaktır.
+Web:    Uygulama varsayılan olarak http://localhost:3001 adresinde çalışacaktır.
 Server: Uygulama varsayılan olarak http://localhost:5000 adresinde çalışacaktır.
 
 
@@ -79,5 +79,5 @@ Her bir servisi ayrı ayrı başlatın.
 npm start
 
 4-Uygulamaya Erişin:
-Web:    Uygulama varsayılan olarak http://localhost:3000 adresinde çalışacaktır.
+Web:    Uygulama varsayılan olarak http://localhost:3001 adresinde çalışacaktır.
 Server: Uygulama varsayılan olarak http://localhost:5000 adresinde çalışacaktır.

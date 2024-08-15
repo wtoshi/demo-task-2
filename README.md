@@ -1,5 +1,4 @@
 # Uçuş Rezervasyon Sistemi
-Proje Hakkında
 Bu proje, kullanıcıların uçuş araması yapmalarını, filtrelemelerini ve rezervasyon yapmalarını sağlayan bir uçuş rezervasyon sistemi uygulamasıdır. 
 Kullanıcılar, belirli kriterlere göre uçuşları arayabilir, uçuş detaylarını görebilir ve rezervasyon işlemlerini gerçekleştirebilir.
 
@@ -7,20 +6,30 @@ Kullanıcılar, belirli kriterlere göre uçuşları arayabilir, uçuş detaylar
  
 ### Frontend (Web)
 React: Kullanıcı arayüzü oluşturmak için kullanıldı.
+
 Redux: Global durum yönetimi için kullanıldı.
+
 Material-UI: UI bileşenleri ve stil yönetimi için kullanıldı.
+
 Framer Motion: Animasyon ve geçiş efektleri için kullanıldı.
+
 Axios: Backend API’lerine HTTP istekleri yapmak için kullanıldı
 
 
 ### Backend (Sunucu)
 
 Nginx: Gateway olarak kullanılmıştır.
+
 Node.js: Backend için çalışma zamanı ortamı olarak kullanıldı.
+
 NestJS: API geliştirme ve yönetimi için kullanıldı.
+
 Passport.js & JWT: Kimlik doğrulama ve güvenli erişim için kullanıldı.
+
 MongoDB: Veri depolama için kullanıldı.
+
 Mongoose: MongoDB ile veri modelleme için kullanıldı.
+
 Docker: Servislerin konteynerleştirilmesi ve dağıtımı için kullanıldı
 
 ## Özellikler
@@ -44,8 +53,8 @@ Bu proje, Docker ile konteynerleştirilmiştir, bu yüzden Docker kullanarak kol
 
 1-Proje Depozunu Klonlayın:
 
-git clone https://github.com/kullaniciadi/proje-adi.git
-cd proje-adi
+git clone https://github.com/wtoshi/demo-task-2.git
+cd server ve cd web yaparak aşağıdaki komutları tekrarlayın.
 
 2-Docker Compose ile Servisleri Başlatın:
 Docker Compose, uygulamanın tüm servislerini tek bir komutla başlatmanızı sağlar.
@@ -62,8 +71,8 @@ Docker kullanmak istemiyorsanız, Node.js ile manuel olarak da çalıştırabili
 
 1-Proje Depozunu Klonlayın:
 
-git clone https://github.com/kullaniciadi/proje-adi.git
-cd proje-adi
+git clone https://github.com/wtoshi/demo-task-2.git
+cd server
 
 2-Bağımlılıkları Yükleyin:
 Her servis için bağımlılıkları yükleyin.
@@ -78,6 +87,16 @@ Her bir servisi ayrı ayrı başlatın.
 
 npm start
 
+web için de;
+cd web 
+npm install
+npm start
+
 4-Uygulamaya Erişin:
 Web:    Uygulama varsayılan olarak http://localhost:3001 adresinde çalışacaktır.
 Server: Uygulama varsayılan olarak http://localhost:5000 adresinde çalışacaktır.
+
+<img src="web/preview/FlighsPage.png" alt="Açıklama" width="600"/>
+<img src="web/preview/Flightsearch.png" alt="Açıklama" width="600"/>
+<img src="web/preview/my-flights.png" alt="Açıklama" width="600"/>
+<img src="web/preview/search-results.png" alt="Açıklama" width="600"/>

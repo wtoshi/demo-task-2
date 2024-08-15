@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import FlightsHome from './components/flights/FlightsHome';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

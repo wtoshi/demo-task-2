@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import { useDispatch } from 'react-redux';
 import { loginSuccess, logoutSuccess } from '../../redux/slices/authSlice';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
@@ -21,7 +20,6 @@ const validationSchema = Yup.object({
 const LoginModal: React.FC = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isAuthenticated, userName, avatarUrl } = useSelector((state: RootState) => state.auth);
 
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegistering, setIsRegistering] = useState(false);
@@ -59,12 +57,12 @@ const LoginModal: React.FC = () => {
     }
   };
 
-  const handleLogout = () => {
-    clearLoginData();  // Login verilerini temizliyoruz
-    dispatch(logoutSuccess());  // Kullanıcıyı çıkış yaptırıyoruz
-    toast.info('Logged out successfully.');
-    navigate('/'); // Ana sayfaya yönlendirme
-  };
+  // const handleLogout = () => {
+  //   clearLoginData();  // Login verilerini temizliyoruz
+  //   dispatch(logoutSuccess());  // Kullanıcıyı çıkış yaptırıyoruz
+  //   toast.info('Logged out successfully.');
+  //   navigate('/'); // Ana sayfaya yönlendirme
+  // };
 
   return (
     <>

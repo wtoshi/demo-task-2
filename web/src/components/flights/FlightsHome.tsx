@@ -27,6 +27,7 @@ const FlightsHome: React.FC = () => {
         setArrivalIATA(arrivalIATA);
         setDepartureIATA(departureIATA);
 
+        console.log('filters', filters);
         const response = await fetchFlights(searchCriteria, tripType, departureIATA, arrivalIATA);
         console.log('flights response', response);
         if (response) {

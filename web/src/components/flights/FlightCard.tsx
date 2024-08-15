@@ -64,8 +64,8 @@ const FlightCard: React.FC<FlightCardProps> = ({ delay, flight, departureIATA, a
 
     const handleBookFlight = async () => {
         if (isAuthenticated && userName) {
-            const now = dayjs(); // Şu anki zaman
-            const flightTime = dayjs(flight.scheduleDateTime); // Uçuş zamanı
+            // const now = dayjs(); // Şu anki zaman
+            // const flightTime = dayjs(flight.scheduleDateTime); // Uçuş zamanı
     
             // if (flightTime.isBefore(now)) {
             //     toast.error('You cannot book a flight with a past date and time.');

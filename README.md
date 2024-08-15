@@ -81,3 +81,8 @@ npm start
 4-Uygulamaya Erişin:
 Web:    Uygulama varsayılan olarak http://localhost:3000 adresinde çalışacaktır.
 Server: Uygulama varsayılan olarak http://localhost:5000 adresinde çalışacaktır.
+
+<img src="web/preview/FlighsPage.png" alt="Açıklama" width="600"/>
+<img src="web/preview/Flightsearch.png" alt="Açıklama" width="600"/>
+<img src="web/preview/my-flights.png" alt="Açıklama" width="600"/>
+<img src="web/preview/search-results.png" alt="Açıklama" width="600"/>
